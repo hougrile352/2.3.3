@@ -8,13 +8,15 @@ using namespace std;
 int main()
 {
     string sentence; string word;
+    int asdf;
     cout << "Enter a sentence:\n";
     getline(cin, sentence);
 
     cout << "Enter a word:\n";
     cin >> word;
 
-
+    int asdf = sentence.find(word);
+    cout << asdf;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
