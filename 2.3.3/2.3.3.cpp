@@ -7,16 +7,24 @@ using namespace std;
 
 int main()
 {
-    string sentence; string word;
+    string sentence; string word; //Initialize variables
     int asdf;
-    cout << "Enter a sentence:\n";
-    getline(cin, sentence);
+    cout << "Enter a sentence:\n"; //Ask for sentence
+    getline(cin, sentence); //Get sentence
 
-    cout << "Enter a word:\n";
-    cin >> word;
+    cout << "Enter a word:\n"; //Ask for sentence
+    cin >> word; //Get sentence
 
-    int asdf = sentence.find(word);
-    cout << asdf;
+    asdf = sentence.find(word); //Find the word, and define asdf as the word's posiiton
+
+    if (asdf < 0) //Check if the position is under 0, or not found
+    {
+        cout << "\nNot found"; //Print results
+    }
+    else
+    {
+        cout << "\nFound at " << asdf; //Print results if found
+    }
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
